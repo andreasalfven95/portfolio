@@ -1,172 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to my portfolio! I'm Andreas Alfvén, a developer from Uppsala, Sweden. Have a look around my site and contact me if you would want me to create something cool for you!"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="styles/newStyles.css" />
-    <!-- BOX ICONS -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Andreas Alfvén | Web Developer</title>
-  </head>
-  <body>
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <div>
-          <a href="#" class="nav__logo">Andreas Alfvén</a>
-        </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to my portfolio! I'm Andreas Alfvén, a developer from Uppsala, Sweden. Have a look around my site and contact me if you would want me to create something cool for you!" />
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/newStyles.css" />
 
-    <main class="l-main">
-      <section class="home" id="home">
-        <div class="home__container bd-container bd-grid">
-          <div class="home__data">
-            <h1 class="home__title">Simple. <br> <span class="home__title-color">Responsive.
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+
+  <!-- BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <title>Andreas Alfvén | Web Developer</title>
+</head>
+
+<body>
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <div>
+        <a href="#" class="nav__logo">Andreas Alfvén</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <!-- <li class="nav__item">
+            <a href="#qualification" class="nav__link">Qualification</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li> -->
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!-- HOME -->
+    <section class="home section" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Simple. <br> <span class="home__title-color">Responsive.
             </span> <br> Experiences.</h1>
-            <a href="#" class="button">Read more</a>
+          <a href="#" class="button">Read more</a>
+        </div>
+        <div class="home__social">
+          <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+        </div>
+        <div class="home__scroll-icon">
+          <i class='bx bx-mouse'></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section bd-container" id="about">
+      <span class="section-subtitle">My history</span>
+      <h2 class="section-title">About me</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__data bd-grid">
+          <p class="about__description"><span>Hello, I am <br></span>a freelance frontend developer who is passionate
+            about
+            creating and developing web interfaces, with great design.</p>
+          <div>
+            <span class="about__number">05</span>
+            <span class="about__achievement">Years of Experience.</span>
           </div>
-          <div class="home__social">
-            <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+          <div>
+            <span class="about__number">29+</span>
+            <span class="about__achievement">Projects completed.</span>
           </div>
-          <div class="home__scroll-icon">
-            <i class='bx bx-mouse' ></i>
+          <div>
+            <span class="about__number">07</span>
+            <span class="about__achievement">Awards.</span>
           </div>
         </div>
-      </section>
-      <section class="featured">
-        <div class="left">
-          <div class="inner transition2">
-            <p class="subtitle">Featured Project</p>
-            <a href="#" class="featured-title">WedPlan.com Wedding Planner</a>
-            <p class="featured-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              ducimus excepturi ipsa, deleniti ad, enim sed accusamus animi,
-              tempora deserunt earum unde! Facere nihil illum aliquid provident
-              voluptatem nam inventore!
+        <img src="images/world.svg" alt="Plane" class="about__img">
+      </div>
+    </section>
+
+    <!-- QUALIFICATION -->
+    <!-- <section class="qualification section bd-container" id="qualification">
+      <span class="section-subtitle">Experience and education</span>
+      <h2 class="section-title">Qualification</h2>
+
+      <div class="qualification__container bd-grid">
+        <div class="qualification__content">
+          <h2 class="qualification__title">
+            <i class='bx bx-briefcase-alt qualification__title-icon'></i>
+          </h2>
+
+          <div class="bd-grid">
+            <div class="qualification__data">
+              <h3 class="qualification__area">Airline Pilot</h3>
+
+              <div class="qualification__box">
+                <span class="qualification__work">
+                  <i class='bx bxs-plane-alt qualification__icon'></i>
+                  Norwegian Air Shuttle - base in Stockholm, Oslo and Helsinki
+                </span>
+
+                <span class="qualification__work">
+                  <i class='bx bx-calendar-alt qualification__icon'></i>
+                  Sep 2017 - Apr 2020
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- SERVICES -->
+    <!-- <section class="services section bd-container" id="services">
+      <span class="section-subtitle">What I offer</span>
+      <h2 class="section-title">Services</h2>
+
+      <div class="services__container bd-grid">
+
+        <div class="services__data">
+          <i class='bx bx-palette services__icon'></i>
+          <h3 class="services__title">UI/UX Design</h3>
+          <p class="services__description">Services that I offer, with lots of experience behind them</p>
+          <a href="#" class="button">Know more!</a>
+        </div>
+
+        <div class="services__data">
+          <i class='bx bx-laptop services__icon'></i>
+          <h3 class="services__title">Web Development</h3>
+          <p class="services__description">Services that I offer, with lots of experience behind them</p>
+          <a href="#" class="button">Know more!</a>
+        </div>
+
+        <div class="services__data">
+          <i class='bx bx-pen services__icon'></i>
+          <h3 class="services__title">Graphic Design</h3>
+          <p class="services__description">Services that I offer, with lots of experience behind them</p>
+          <a href="#" class="button">Know more!</a>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- PROJECT IN MIND -->
+    <section class="project section bd-container">
+      <div class="project__container bd-grid">
+        <div class="project__data">
+          <i class='bx bx-chat project__icon'></i>
+
+          <div>
+            <h2 class="project__title">Project in Mind</h2>
+            <p class="project__description">Hire me to carry out the project you have in mind.</p>
+          </div>
+
+          <div>
+            <a href="#" class="button button-light">Hire me!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section bd-container" id="portfolio">
+      <span class="section-subtitle">My recent works</span>
+      <h2 class="section-title">Portfolio</h2>
+
+      <div class="portfolio__nav">
+        <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+        <span class="portfolio__item" data-filter=".web">Web</span>
+        <span class="portfolio__item" data-filter=".ux">UI/UX</span>
+        <span class="portfolio__item" data-filter=".app">App</span>
+      </div>
+
+      <div class="portfolio__container bd-grid">
+        <div class="portfolio__content mix web">
+          <a href="#"><img src="images/work1.jpg" alt="Work" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Web development</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client.</h2>
+            </a>
+            <a href="#" class="button button-link">View details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix ux">
+          <a href="#"><img src="images/work1.jpg" alt="Work" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">UX design</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client.</h2>
+            </a>
+            <a href="#" class="button button-link">View details</a>
+          </div>
+        </div>
+
+        <div class="portfolio__content mix app">
+          <a href="#"><img src="images/work1.jpg" alt="Work" class="portfolio__img"></a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Mobile app</span>
+            <a href="#">
+              <h2 class="portfolio__title">New portfolio of work done for a client.</h2>
+            </a>
+            <a href="#" class="button button-link">View details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial section bd-container" id="testimonial">
+      <span class="section-subtitle">What my clients are saying</span>
+      <h2 class="section-title">Testimonial</h2>
+
+      <div class="testimonial__container swiper-container">
+        <div class="swiper-wrapper">
+          <div class="testimonial__content swiper-slide">
+            <img src="images/testimonial1.jpg" alt="Testimonial" class="testimonial__img">
+            <h3 class="testimonial__title">Nick Holly</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Ratione dolor
+              dicta placeat, fuga earum eveniet, vero cum atque illum dolorem sequi tempore dignissimos reiciendis odio!
+              Ea quos corporis saepe officia!</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="images/testimonial1.jpg" alt="Testimonial" class="testimonial__img">
+            <h3 class="testimonial__title">Sarah Smith</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor
+              dicta placeat, fuga earum eveniet, vero cum atque illum dolorem sequi tempore.</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="images/testimonial1.jpg" alt="Testimonial" class="testimonial__img">
+            <h3 class="testimonial__title">George Ericson</h3>
+            <span class="testimonial__client">Client</span>
+            <p class="testimonial__description">Ratione dolor
+              dicta placeat, fuga earum eveniet, vero cum atque illum dolorem sequi tempore dignissimos reiciendis odio!
             </p>
           </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills section bd-container" id="skills">
+      <span class="section-subtitle">Tools I have worked with</span>
+      <h2 class="section-title">Skills</h2>
+    </section>
+
+
+    <!-- CONTACT ME -->
+    <section class="contact section bd-container" id="contact">
+      <span class="section-subtitle">For projects or work</span>
+      <h2 class="section-title">Contact me</h2>
+
+      <div class="contact__container bd grid">
+        <div class="contact__content bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input">
+            <input type="email" placeholder="Email" class="contact__input">
+            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+            <input type="button" value="Send!" class="contact__button button">
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="featured">
+      <div class="left">
+        <div class="inner transition2">
+          <p class="subtitle">Featured Project</p>
+          <a href="#" class="featured-title">WedPlan.com Wedding Planner</a>
+          <p class="featured-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            ducimus excepturi ipsa, deleniti ad, enim sed accusamus animi,
+            tempora deserunt earum unde! Facere nihil illum aliquid provident
+            voluptatem nam inventore!
+          </p>
+        </div>
         <img class="right transition2" src="images/wedplan.png" alt="WedPlan" />
-      </section>
+    </section>
 
-      <section class="skills">
-        <div class="skills-container">
-          <ul>
-            <li class="transition2">
-              <div class="icon-container one">
-                <img src="images/icon-ux.svg" alt="UI/UX Icon" />
-              </div>
-              <p class="skill-title">UI UX Design</p>
-              <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-                quas?
-              </p>
-            </li>
-            <li class="transition2">
-              <div class="icon-container two">
-                <img src="images/icon-ux.svg" alt="UI/UX Icon" />
-              </div>
-              <p class="skill-title">UI UX Design</p>
-              <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-                quas?
-              </p>
-            </li>
-            <li class="transition2">
-              <div class="icon-container three">
-                <img src="images/icon-ux.svg" alt="UI/UX Icon" />
-              </div>
-              <p class="skill-title">UI UX Design</p>
-              <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-                quas?
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="portfolio">
-        <div class="portfolio-container transition3">
-          <div class="portfolio-left">
-            <div class="inner">
-              <p class="subtitle">Guitar App</p>
-              <p class="featured-title">Guitar App</p>
-              <p class="featured-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                quaerat quos vero distinctio enim commodi tempore iste nulla
-                illum earum.
-              </p>
-            </div>
-          </div>
-          <a href="#"><img src="images/fretty.jpg" alt="Fretastic" /></a>
-        </div>
+  </main>
 
-        <div class="portfolio-container transition3">
-          <div class="portfolio-left">
-            <div class="inner">
-              <p class="subtitle">Guitar App</p>
-              <p class="featured-title">Guitar App</p>
-              <p class="featured-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                quaerat quos vero distinctio enim commodi tempore iste nulla
-                illum earum.
-              </p>
-            </div>
-          </div>
-          <a href="#"><img src="images/fretty.jpg" alt="Fretastic" /></a>
-        </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container bd-container">
+      <h1 class="footer__title">Andreas Alfvén</h1>
+      <p class="footer__description">I am Andreas Alfvén and this is my personal website.</p>
 
-        <div class="portfolio-container transition3">
-          <div class="portfolio-left">
-            <div class="inner">
-              <p class="subtitle">Guitar App</p>
-              <p class="featured-title">Guitar App</p>
-              <p class="featured-desc">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-                quaerat quos vero distinctio enim commodi tempore iste nulla
-                illum earum.
-              </p>
-            </div>
-          </div>
-          <a href="#"><img src="images/fretty.jpg" alt="Fretastic" /></a>
-        </div>
-      </section>
-    </main>
 
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+      <div class="footer__social">
+        <a href="#" class="footer__link"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="footer__link"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="footer__link"><i class='bx bxl-linkedin'></i></a>
+        <a href="#" class="footer__link"><i class='bx bxl-github'></i></a>
+      </div>
+      <p class="footer__copy">&#169; 2020 Andreas Alfvén. All rights reserved</p>
+    </div>
+  </footer>
 
-    <!-- INDEX .JS -->
-    <script src="index.js"></script>
-  </body>
+  <!-- MIXITUP FILTER -->
+  <script src="js/mixitup.min.js"></script>
+
+  <!-- SWIPER JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- INDEX .JS -->
+  <script src="js/index.js"></script>
+</body>
+
 </html>
