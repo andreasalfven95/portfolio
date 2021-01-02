@@ -35,7 +35,8 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight
-    const sectionTop = current.offsetTop - 50
+    //When to swap over to next active link
+    const sectionTop = current.offsetTop - 300
 
     sectionId = current.getAttribute('id')
 
@@ -65,25 +66,25 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 /* MIXITUP FILTER PORTFOLIO */
-const mixer = mixitup(".portfolio__container", {
+const mixer = mixitup('.portfolio__container', {
   selectors: {
-    target: '.portfolio__content'
+    target: '.portfolio__content',
   },
   animation: {
-    duration: 400
-  }
-});
+    duration: 400,
+  },
+})
 
 /* LINK ACTIVE PORTFOLIO */
-const linkPortfolio = document.querySelectorAll(".portfolio__item")
+const linkPortfolio = document.querySelectorAll('.portfolio__item')
 
 function activePortfolio() {
   if (linkPortfolio) {
-    linkPortfolio.forEach(l => l.classList.remove("active-portfolio"))
-    this.classList.add("active-portfolio")
+    linkPortfolio.forEach((l) => l.classList.remove('active-portfolio'))
+    this.classList.add('active-portfolio')
   }
 }
-linkPortfolio.forEach(l => l.addEventListener("click", activePortfolio))
+linkPortfolio.forEach((l) => l.addEventListener('click', activePortfolio))
 
 /* SWIPER CAROUSEL */
 const mySwiper = new Swiper('.testimonial__container', {
@@ -110,17 +111,102 @@ const mySwiper = new Swiper('.testimonial__container', {
     1024: {
       slidesPerView: 3,
     },
-  }
+  },
+})
+
+/* GSAP ANIMATIONS */
+gsap.from('.home__img', {
+  opacity: 0,
+  duration: 2,
+  delay: 0.5,
+  x: 60,
+})
+
+gsap.from('.home__data', {
+  opacity: 0,
+  duration: 2,
+  delay: 0.8,
+  y: 25,
+})
+
+gsap.from('.home__title, home__button', {
+  opacity: 0,
+  duration: 2,
+  delay: 1,
+  y: 25,
+  ease: 'expo.out',
+  stagger: 0.2,
+})
+
+gsap.from('.nav__logo, .nav__toggle', {
+  opacity: 0,
+  duration: 2,
+  delay: 1.5,
+  y: 25,
+  ease: 'expo.out',
+  stagger: 0.2,
+})
+
+gsap.from('.nav__item', {
+  opacity: 0,
+  duration: 2,
+  delay: 1.8,
+  y: 25,
+  ease: 'expo.out',
+  stagger: 0.2,
+})
+
+gsap.from('.home__social-icon', {
+  opacity: 0,
+  duration: 2,
+  delay: 2.3,
+  y: 25,
+  ease: 'expo.out',
+  stagger: 0.2,
+})
+
+gsap.from('.home__scroll-icon', {
+  opacity: 0,
+  duration: 2,
+  delay: 2.8,
+  ease: 'expo.out',
+})
+
+gsap.from('.home__scroll-icon', {
+  duration: 4,
+  delay: 8,
+  y: 50,
+  repeat: -1,
 })
 
 /* SCROLL REVEAL ANIMATION */
+/* const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+  reset: true,
+}) */
 
 /* SCROLL HOME */
+/* sr.reveal('.home__title', {})
+sr.reveal('.home__button', { delay: 200 })
+sr.reveal('.home__img', { delay: 400 })
+sr.reveal('.home__social-icon', { interval: 200 }) */
 
 /* SCROLL ABOUT */
+sr.reveal('.about', {})
+sr.reveal('.about__img', { delay: 400 })
+sr.reveal('.about__container', { delay: 200 })
+
+/* SCROLL PORTFOLIO */
+sr.reveal('.portfolio', {})
+sr.reveal('.portfolio__nav', { delay: 200 })
+sr.reveal('.portfolio__content', { interval: 400 })
 
 /* SCROLL SKILLS */
-
-/* SCROLL WORK */
+sr.reveal('.skills', {})
+sr.reveal('.skills__content', { interval: 400 })
 
 /* SCROLL CONTACT */
+sr.reveal('.contact', {})
+sr.reveal('.contact__input', { interval: 400 })
