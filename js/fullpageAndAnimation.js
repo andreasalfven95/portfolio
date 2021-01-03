@@ -5,7 +5,7 @@ const width =
 
 let headerHeight = ''
 
-if (width > 768) {
+if (width >= 768) {
   // window width is at least 768px
   headerHeight = '80px'
 } else {
@@ -93,32 +93,32 @@ var myFullpage = new fullpage('#fullpage', {
     //after leaving section 2
     if (origin.index === 0 && direction === 'down') {
       header.classList.add('scroll-header')
-    } else if (origin.index === 1 && direction === 'up') {
+    } else if (destination.index === 0 && direction === 'up') {
       header.classList.remove('scroll-header')
     }
   },
-  afterLoad: function (origin, destination, direction) {},
+  afterLoad: function (origin, destination, direction) { },
   afterRender: function () {
-    var gsap = new TimelineMax()
+    var gsap = new TimelineMax().timeScale(1)
     /* GSAP ANIMATIONS */
     gsap.from('.home__img', {
       opacity: 0,
-      duration: 2,
-      delay: 0.5,
+      duration: 1,
+      /* delay: 0.5, */
       x: 60,
     })
 
     gsap.from('.home__data', {
       opacity: 0,
-      duration: 2,
-      delay: 0.8,
+      duration: 1,
+      /* delay: 0.8, */
       y: 25,
     })
 
     gsap.from('.home__title, home__button', {
       opacity: 0,
-      duration: 2,
-      delay: 1,
+      duration: 1,
+      /* delay: 1, */
       y: 25,
       ease: 'expo.out',
       stagger: 0.2,
@@ -126,8 +126,8 @@ var myFullpage = new fullpage('#fullpage', {
 
     gsap.from('.nav__logo, .nav__toggle', {
       opacity: 0,
-      duration: 2,
-      delay: 1.5,
+      duration: 1,
+      /* delay: 1.5, */
       y: 25,
       ease: 'expo.out',
       stagger: 0.2,
@@ -135,8 +135,8 @@ var myFullpage = new fullpage('#fullpage', {
 
     gsap.from('.nav__item', {
       opacity: 0,
-      duration: 2,
-      delay: 1.8,
+      duration: 1,
+      /* delay: 1.8, */
       y: 25,
       ease: 'expo.out',
       stagger: 0.2,
@@ -144,8 +144,8 @@ var myFullpage = new fullpage('#fullpage', {
 
     gsap.from('.home__social-icon', {
       opacity: 0,
-      duration: 2,
-      delay: 2.3,
+      duration: 1,
+      /* delay: 2.3, */
       y: 25,
       ease: 'expo.out',
       stagger: 0.2,
@@ -153,21 +153,21 @@ var myFullpage = new fullpage('#fullpage', {
 
     gsap.from('.home__scroll-icon', {
       opacity: 0,
-      duration: 2,
-      delay: 2.8,
+      duration: 1,
+      /* delay: 2.8, */
       ease: 'expo.out',
     })
 
     gsap.from('.home__scroll-icon', {
       duration: 4,
-      delay: 8,
+      /* delay: 8, */
       y: 50,
       repeat: -1,
     })
   },
-  afterResize: function (width, height) {},
-  afterReBuild: function () {},
-  afterResponsive: function (isResponsive) {},
-  afterSlideLoad: function (section, origin, destination, direction) {},
-  onSlideLeave: function (section, origin, destination, direction) {},
+  afterResize: function (width, height) { },
+  afterReBuild: function () { },
+  afterResponsive: function (isResponsive) { },
+  afterSlideLoad: function (section, origin, destination, direction) { },
+  onSlideLeave: function (section, origin, destination, direction) { },
 })

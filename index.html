@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to my portfolio! I'm Andreas Alfvén, a developer from Uppsala, Sweden. Have a look around my site and contact me if you would want me to create something cool for you!"
-    />
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="styles/newStyles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to my portfolio! I'm Andreas Alfvén, a developer from Uppsala, Sweden. Have a look around my site and contact me if you would want me to create something cool for you!" />
 
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/newStyles.css" />
 
-    <!-- BOX ICONS -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
 
-    <!-- FULLPAGE CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
-      crossorigin="anonymous"
-    />
+  <!-- BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-    <title>Andreas Alfvén | Web Developer</title>
-  </head>
+  <!-- FULLPAGE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+    crossorigin="anonymous" />
 
-  <body>
-    <header class="l-header" id="header">
-      <nav class="nav g-padding">
-        <div>
-          <a href="#" class="nav__logo">Andreas Alfvén</a>
+  <title>Andreas Alfvén | Web Developer</title>
+</head>
+
+<body>
+  <header class="l-header" id="header">
+    <nav class="nav g-padding">
+      <div>
+        <a href="#home" class="nav__logo">Andreas Alfvén</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list" id="menu">
+          <li data-menuanchor="home" class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li data-menuanchor="about" class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li data-menuanchor="portfolio" class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li data-menuanchor="skills" class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li data-menuanchor="contact" class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main" id="fullpage">
+    <!-- HOME -->
+    <section class="home section" id="home-section">
+      <div class="home__container g-padding bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">
+            Simple. <br />
+            <span class="home__title-color">Responsive. </span> <br />
+            Experiences.
+          </h1>
+          <a href="#about" class="button home__button">Read more</a>
         </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list" id="menu">
-            <li data-menuanchor="home" class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            <li data-menuanchor="about" class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li data-menuanchor="portfolio" class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
-            </li>
-            <li data-menuanchor="skills" class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li data-menuanchor="contact" class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
+        <div class="home__social">
+          <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="home__social-icon"><i class="bx bxl-github"></i></a>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
+        <div class="home__scroll-icon">
+          <a href="#about"><i class="bx bx-mouse"></i></a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main class="l-main" id="fullpage">
-      <!-- HOME -->
-      <section class="home section" id="home-section">
-        <div class="home__container g-padding bd-grid">
-          <div class="home__data">
-            <h1 class="home__title">
-              Simple. <br />
-              <span class="home__title-color">Responsive. </span> <br />
-              Experiences.
-            </h1>
-            <a href="#about" class="button home__button">Read more</a>
+    <!-- ABOUT -->
+    <section class="about section g-padding" id="about-section">
+      <span class="section-subtitle">My history</span>
+      <h2 class="section-title">About me</h2>
+
+      <div class="flex-center">
+        <!-- <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Hello, I am <br /></span>a web developer who is passionate
+              about creating and developing web interfaces, with great design.
+              <br /><br />
+              I have previously been working as a airline pilot, but ever
+              since Covid19 struck, I have been able to put even more time
+              into web development and design!
+            </p>
           </div>
-          <div class="home__social">
-            <a href="#" class="home__social-icon"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-            <a href="#" class="home__social-icon"
-              ><i class="bx bxl-github"></i
-            ></a>
+          <img src="images/about2.jpg" alt="Plane" class="about__img" />
+        </div> -->
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Hello, I am <br /></span>a web developer who is passionate
+              about creating and developing web interfaces, with great design.
+              <br /><br />
+              I have previously been working as a airline pilot, but ever
+              since Covid19 struck, I have been able to put even more time
+              into web development and design!
+            </p>
           </div>
-          <div class="home__scroll-icon">
-            <a href="#about"><i class="bx bx-mouse"></i></a>
-          </div>
+          <img src="images/about.jpg" alt="Plane" class="about__img" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ABOUT -->
-      <section class="about section g-padding" id="about-section">
-        <span class="section-subtitle">My history</span>
-        <h2 class="section-title">About me</h2>
+    <!-- PORTFOLIO -->
+    <section class="portfolio section g-padding" id="portfolio-section">
+      <span class="section-subtitle">My recent works</span>
+      <h2 class="section-title">Portfolio</h2>
 
-        <div class="flex-center">
-          <div class="about__container bd-grid">
-            <div class="about__data bd-grid">
-              <p class="about__description">
-                <span>Hello, I am <br /></span>a web developer who is passionate
-                about creating and developing web interfaces, with great design.
-                <br /><br />
-                I have previously been working as a airline pilot, but ever
-                since Covid19 struck, I have been able to put even more time
-                into web development and design!
-              </p>
-            </div>
-            <img src="images/about.jpg" alt="Plane" class="about__img" />
-          </div>
-        </div>
-      </section>
-
-      <!-- PORTFOLIO -->
-      <section class="portfolio section g-padding" id="portfolio-section">
-        <span class="section-subtitle">My recent works</span>
-        <h2 class="section-title">Portfolio</h2>
-
-        <!-- <div class="portfolio__nav">
+      <!-- <div class="portfolio__nav">
           <span class="portfolio__item active-portfolio" data-filter="all"
             >All</span
           >
@@ -170,94 +172,77 @@
             </div>
           </div>
         </div> -->
-      </section>
+    </section>
 
-      <!-- SKILLS -->
-      <section class="skills section g-padding" id="skills-section">
-        <span class="section-subtitle">Tools I have worked with</span>
-        <h2 class="section-title">Skills</h2>
+    <!-- SKILLS -->
+    <section class="skills section g-padding" id="skills-section">
+      <span class="section-subtitle">Tools I have worked with</span>
+      <h2 class="section-title">Skills</h2>
 
-        <!-- <div class="flex-center">
+      <!-- <div class="flex-center">
           <h1>Hejsan</h1>
         </div> -->
-      </section>
+    </section>
 
-      <!-- CONTACT ME -->
-      <section class="contact section g-padding" id="contact-section">
-        <span class="section-subtitle">For projects or work</span>
-        <h2 class="section-title">Contact me</h2>
+    <!-- CONTACT ME -->
+    <section class="contact section g-padding" id="contact-section">
+      <span class="section-subtitle">For projects or work</span>
+      <h2 class="section-title">Contact me</h2>
 
-        <div class="contact__container bd grid">
-          <div class="contact__content bd-grid">
-            <form action="" class="contact__form">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="email" placeholder="Email" class="contact__input" />
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="10"
-                class="contact__input"
-              ></textarea>
+      <div class="contact__container bd grid">
+        <div class="contact__content bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="email" placeholder="Email" class="contact__input" />
+            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
 
-              <input
-                type="button"
-                value="Send!"
-                class="contact__button button"
-              />
-            </form>
-          </div>
+            <input type="button" value="Send!" class="contact__button button" />
+          </form>
         </div>
-        <!-- FOOTER -->
-        <footer class="footer-section fp-auto-height">
-          <div class="footer__container bd-container">
-            <h1 class="footer__title">Andreas Alfvén</h1>
-            <p class="footer__description">
-              I am Andreas Alfvén and this is my personal website.
-            </p>
+      </div>
+      <!-- FOOTER -->
+      <footer class="footer-section fp-auto-height">
+        <div class="footer__container bd-container">
+          <h1 class="footer__title">Andreas Alfvén</h1>
+          <p class="footer__description">
+            I am Andreas Alfvén and this is my personal website.
+          </p>
 
-            <div class="footer__social">
-              <a href="#" class="footer__link"
-                ><i class="bx bxl-facebook"></i
-              ></a>
-              <a href="#" class="footer__link"
-                ><i class="bx bxl-instagram"></i
-              ></a>
-              <a href="#" class="footer__link"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-            </div>
-            <p class="footer__copy">
-              &#169; 2020 Andreas Alfvén. All rights reserved
-            </p>
+          <div class="footer__social">
+            <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+            <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
           </div>
-        </footer>
-      </section>
-    </main>
+          <p class="footer__copy">
+            &#169; 2020 Andreas Alfvén. All rights reserved
+          </p>
+        </div>
+      </footer>
+    </section>
+  </main>
 
-    <!-- FULLPAGE .JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
-      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
-      crossorigin="anonymous"
-    ></script>
+  <!-- FULLPAGE .JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+    integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+    crossorigin="anonymous"></script>
 
-    <!-- INDEX .JS -->
-    <script src="js/index.js"></script>
+  <!-- INDEX .JS -->
+  <script src="js/index.js"></script>
 
-    <!-- MIXITUP FILTER -->
-    <script src="js/mixitup.min.js"></script>
+  <!-- MIXITUP FILTER -->
+  <script src="js/mixitup.min.js"></script>
 
-    <!-- SWIPER JS -->
-    <script src="js/swiper-bundle.min.js"></script>
+  <!-- SWIPER JS -->
+  <script src="js/swiper-bundle.min.js"></script>
 
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- GSAP -->
-    <script src="js/gsap.min.js"></script>
+  <!-- GSAP -->
+  <script src="js/gsap.min.js"></script>
 
-    <script src="js/fullpageAndAnimation.js"></script>
-  </body>
+  <script src="js/fullpageAndAnimation.js"></script>
+</body>
+
 </html>

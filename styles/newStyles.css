@@ -172,7 +172,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 }
 
 .l-header {
@@ -394,8 +394,8 @@ img {
 }
 
 .about__img {
-  justify-self: left;
-  width: 500px;
+  justify-self: center;
+  width: 100%;
 }
 
 /*===== PORTFOLIO =====*/
@@ -586,7 +586,7 @@ img {
   }
 
   .about__description {
-    text-align: right;
+    text-align: center;
   }
 
   .about__img {
