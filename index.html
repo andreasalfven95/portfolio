@@ -19,31 +19,40 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- FULLPAGE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+
     <title>Andreas Alfvén | Web Developer</title>
   </head>
 
   <body>
     <header class="l-header" id="header">
-      <nav class="nav bd-container">
+      <nav class="nav g-padding">
         <div>
           <a href="#" class="nav__logo">Andreas Alfvén</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+          <ul class="nav__list" id="menu">
+            <li data-menuanchor="home" class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="about" class="nav__item">
               <a href="#about" class="nav__link">About</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="portfolio" class="nav__item">
               <a href="#portfolio" class="nav__link">Portfolio</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="skills" class="nav__item">
               <a href="#skills" class="nav__link">Skills</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="contact" class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
@@ -55,17 +64,17 @@
       </nav>
     </header>
 
-    <main class="l-main">
+    <main class="l-main" id="fullpage">
       <!-- HOME -->
-      <section class="home section" id="home">
-        <div class="home__container bd-container bd-grid">
+      <section class="home section" id="home-section">
+        <div class="home__container g-padding bd-grid">
           <div class="home__data">
             <h1 class="home__title">
               Simple. <br />
               <span class="home__title-color">Responsive. </span> <br />
               Experiences.
             </h1>
-            <a href="#" class="button home__button">Read more</a>
+            <a href="#about" class="button home__button">Read more</a>
           </div>
           <div class="home__social">
             <a href="#" class="home__social-icon"
@@ -82,7 +91,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about section bd-container" id="about">
+      <section class="about section g-padding" id="about-section">
         <span class="section-subtitle">My history</span>
         <h2 class="section-title">About me</h2>
 
@@ -104,11 +113,11 @@
       </section>
 
       <!-- PORTFOLIO -->
-      <section class="portfolio section bd-container" id="portfolio">
+      <section class="portfolio section g-padding" id="portfolio-section">
         <span class="section-subtitle">My recent works</span>
         <h2 class="section-title">Portfolio</h2>
 
-        <div class="portfolio__nav">
+        <!-- <div class="portfolio__nav">
           <span class="portfolio__item active-portfolio" data-filter="all"
             >All</span
           >
@@ -160,21 +169,21 @@
               <a href="#" class="button button-link">View details</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- SKILLS -->
-      <section class="skills section bd-container" id="skills">
+      <section class="skills section g-padding" id="skills-section">
         <span class="section-subtitle">Tools I have worked with</span>
         <h2 class="section-title">Skills</h2>
 
-        <div class="flex-center">
+        <!-- <div class="flex-center">
           <h1>Hejsan</h1>
-        </div>
+        </div> -->
       </section>
 
       <!-- CONTACT ME -->
-      <section class="contact section bd-container" id="contact">
+      <section class="contact section g-padding" id="contact-section">
         <span class="section-subtitle">For projects or work</span>
         <h2 class="section-title">Contact me</h2>
 
@@ -199,7 +208,8 @@
             </form>
           </div>
         </div>
-        <footer class="footer">
+        <!-- FOOTER -->
+        <footer class="footer-section fp-auto-height">
           <div class="footer__container bd-container">
             <h1 class="footer__title">Andreas Alfvén</h1>
             <p class="footer__description">
@@ -226,25 +236,15 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <!-- <footer class="footer">
-      <div class="footer__container bd-container">
-        <h1 class="footer__title">Andreas Alfvén</h1>
-        <p class="footer__description">
-          I am Andreas Alfvén and this is my personal website.
-        </p>
+    <!-- FULLPAGE .JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
 
-        <div class="footer__social">
-          <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-          <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-        </div>
-        <p class="footer__copy">
-          &#169; 2020 Andreas Alfvén. All rights reserved
-        </p>
-      </div>
-    </footer> -->
+    <!-- INDEX .JS -->
+    <script src="js/index.js"></script>
 
     <!-- MIXITUP FILTER -->
     <script src="js/mixitup.min.js"></script>
@@ -258,7 +258,6 @@
     <!-- GSAP -->
     <script src="js/gsap.min.js"></script>
 
-    <!-- INDEX .JS -->
-    <script src="js/index.js"></script>
+    <script src="js/fullpageAndAnimation.js"></script>
   </body>
 </html>
